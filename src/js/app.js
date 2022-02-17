@@ -66,23 +66,25 @@ if (mql("(max-width: 800px)").matches) {
 
 
 
-const screenWidth = window.screen.width
+// const screenWidth = window.screen.width
 
-let screen = Math.floor (screenWidth/300)
+// let screen = Math.floor (screenWidth/300)
 
 
-window.onresize = function(event) {
-  screen = Math.floor (screenWidth/400)
-  console.log(screen);
-};
+// window.onresize = function(event) {
+//   screen = Math.floor (screenWidth/400)
+//   console.log(screen);
+// };
 
 
 
 
 var swiper = new Swiper(".swiper", {
-    slidesPerView: `${screen}`,
-    spaceBetween: 30,
+  modules: [ Navigation, Pagination ],
+    slidesPerView: 3,
+    spaceBetween: 0,
     centeredSlides: false,
+    grabCursor: true,
     pagination: {
       el: ".swiper-scrollbar",
       clickable: true,
@@ -94,7 +96,11 @@ var swiper = new Swiper(".swiper", {
   window.addEventListener("scroll", function(){
     const menu = document.querySelector(".header_nav")
     const logo = document.querySelector(".logo-img")
-    menu.classList.toggle("sticky", window.scrollY > 0)
+    menu.classList.toggle("sticky", window.scrollY > 20)
     logo.classList.toggle("logo-stiky", window.scrollY > 0)
+    
 })
+
+
+
 

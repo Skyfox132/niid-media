@@ -98,7 +98,7 @@ h2 {
 	height: 300%;
 	opacity: .6;
 	transform: translateY(-400px);
-	transition: 0.1s;
+	transition: 2s;
 	background: url("../img/Vector.png") repeat;
 }
 
@@ -202,7 +202,7 @@ h2 {
 }
 .logowrap{
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	align-items: center;
 }
 .slogan {
@@ -483,7 +483,8 @@ h2 {
 
 	}
 	& h3 a:hover {
-		transition: 0.2s;
+		transition-duration: 0.2s !important;
+		transition: color !important;
 		color: $orange-color;
 		&::before {
 			background: no-repeat url("../img/news_arrow_orange.png");
@@ -506,6 +507,7 @@ h2 {
 	height: 0;
 	overflow: hidden;
 	margin-left: 40px;
+	transition-duration: 2s;
 	& h4 {
 		margin-top: 20px;
 		&:first-child{
@@ -655,6 +657,8 @@ h2 {
 		letter-spacing: 0.04em;
 		position: relative;
 		padding-left: 110px;
+		transition-duration: 0.2s;
+		transition: color;
 	}
 	& a::before {
 		content: "";
@@ -806,11 +810,18 @@ h2 {
 .swiper-slide {
 	margin: 0 !important;
 	position: relative;
-	&:hover {
-		border: 3px solid $orange-color;
-	}
+
 
 }
+
+.slide-link {
+	transition-duration: .3s !important;
+	transition: all;
+	  &:hover {
+	
+		border: 3px solid $orange-color;
+	  }
+	}
 
 .slide-link a {
 	padding:  0 10px;
@@ -837,7 +848,7 @@ h2 {
 .logo-min{
 	display: block;
 	position: relative;
-	left: -18px;
+	left: -70px;
 	z-index: 1;
 }
 .logo-min_sticky{
@@ -845,11 +856,15 @@ h2 {
 	height: 40px;
 	display: block !important;
 }
-
+.header_nav{
+	transition-duration: 1s;
+	transition: opacity;
+}
 .sticky {
+	opacity: 1;
 	position: fixed;
-	z-index: 100000;
-	top: -8%;
+	z-index: 100;
+	top: -10%;
 	left: 0;
 	background: #000;
 
@@ -860,7 +875,9 @@ h2 {
 }
 
 .logo-stiky {
-	display: none;
+	position: absolute;
+	transition: 0.4s top;
+	top: -200%;
 }
 .burger {
 	position: fixed;
@@ -891,6 +908,7 @@ h2 {
 }
 
 .burger-span {
+	cursor: pointer;
 	width: 30px;
 	height: 6px;
 	background: #fff;
