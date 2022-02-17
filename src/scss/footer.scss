@@ -1,0 +1,113 @@
+
+$orange-color: #f8b017;
+
+.footer-container {
+    background: #000;
+    color: #fff;
+    padding-top: 40px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    & li {
+        list-style-type: none;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 0.68rem;
+        line-height: 1.3rem;
+
+        letter-spacing: 0.08em;
+
+        color: #C8C8C8;
+    }
+    & li:hover {
+        cursor: pointer;
+        color: $orange-color;
+    }
+   
+}
+
+.link-margin {
+    margin-right:15px;
+    & h5 {
+        margin-bottom: 20px;
+    }
+}
+
+.social_links__margin{
+    margin-top: 55px;
+    margin-bottom: 20px;
+}
+
+.social_links {
+
+    
+
+    & a {
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        margin-right: 40px;
+        & span {
+            display: block;
+            width: 40px;
+            height: 40px;
+            mix-blend-mode: screen;
+            background: linear-gradient(225deg, #FFAD00 21%, #DAA520 60%, #FFF 85%, hsla(41, 72%, 76%, 0.986) 72%);
+            background-size: 4em 4em, 2em 2em;
+        }
+        &:hover {
+            span {
+                animation-name: icon;
+                animation-duration: .6s;
+            }
+        }
+        
+    }
+        
+
+            @keyframes icon {
+                from {
+                    background-position: 100% 0;
+                }
+                to {
+                    background-position: -50% 180%;
+                }
+            }   
+        
+}  
+
+.niidmail {
+    display: inline;
+    line-height: 3rem;
+    height: 40px;
+    position: absolute;
+    & a {
+        max-width: 80%;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 0.75rem;
+        line-height: 40px;
+        letter-spacing: 0.06em;
+        color: #FFAD00 !important;
+        transform: translatey(-20%);
+
+
+    }
+}
+
+.copyright {
+    & p {
+        font-weight: bold;
+        font-size: 0.65rem;
+        line-height: 140.62%;
+        letter-spacing: 0.08em;
+        color: #808080;
+
+    }
+}
+
+
