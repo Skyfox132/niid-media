@@ -12,6 +12,20 @@ scrollBullet();
 
 
 
+
+const burger = document.querySelector(".burger")
+
+const burgerSpan = document.querySelector(".burger-span")
+burgerSpan.addEventListener("click", function(){
+  console.log("click");
+  burger.classList.toggle("burger-active")
+
+
+})
+
+
+
+
 const acc = document.querySelectorAll(".tab-title_flex");
 let i;
 const arrow = document.querySelectorAll(".arrow")
@@ -31,12 +45,42 @@ for (i = 0; i < acc.length; i++) {
 })}
 
 
+//disable standart menu and add burger
+let mql = window.matchMedia
+
+if (mql("(max-width: 800px)").matches) {
+
+  let mainMenu = document.querySelector(".main-menu")
+  let burger = document.querySelector(".burger")
+  mainMenu.style.display = "none"
+  burger.style.display = "block"
+
+
+  /* the viewport is at least 400 pixels wide */
+} else {
+  /* the viewport is less than 400 pixels wide */
+}
+
+
+
+
+
+
+const screenWidth = window.screen.width
+
+let screen = Math.floor (screenWidth/300)
+
+
+window.onresize = function(event) {
+  screen = Math.floor (screenWidth/400)
+  console.log(screen);
+};
 
 
 
 
 var swiper = new Swiper(".swiper", {
-    slidesPerView: 3.5,
+    slidesPerView: `${screen}`,
     spaceBetween: 30,
     centeredSlides: false,
     pagination: {
