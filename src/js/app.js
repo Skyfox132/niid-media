@@ -104,3 +104,9 @@ var swiper = new Swiper(".swiper", {
 
 
 
+gsap.to("#bg", {
+  scrollTrigger : {
+    scrub: 1
+  },
+    y : -300,
+})
