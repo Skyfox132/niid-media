@@ -5,7 +5,7 @@ export default ()=>{
         let logoMin = document.querySelector(".logo-mini")
         let slogan = document.querySelector(".slogan-text")
       
-        if(window.pageYOffset > 240) {
+        if(window.pageYOffset > 200) {
             header.style.opacity = "1"
             header.classList.add("stick-menu")
             logo.style.width = "0px";
