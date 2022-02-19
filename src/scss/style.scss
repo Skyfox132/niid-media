@@ -33,6 +33,12 @@ body {
 
 }
 
+
+.svgs{
+	height: 0;
+	overflow: hidden;
+}
+
 h2 {
 	font-family: Inter;
 	font-size: 64px;
@@ -97,7 +103,7 @@ h2 {
 	z-index: -1;
 	width: 100%;
 	height: 700%;
-	opacity: .4;
+	opacity: .5;
 	transform: translateY(-2000px);
 	background: url("../img/Vector.png") repeat;
 }
@@ -436,7 +442,20 @@ h2 {
 	height: 100% !important;
 }
 
+.tab-icon {
+	margin: 15px;
+	width: 30px;
+	height: 30px;
+	background-color: #000;
+	clip-path: url('#man');
+	&:hover {
+		background-color: $orange-color;
+	}
+}
 
+.tab-icon__active {
+	background-color: $orange-color;
+}
 
 .tab-title {
 	display: block;
@@ -453,29 +472,6 @@ h2 {
 		letter-spacing: 0.04em;
 		color: #000000;
 		position: relative;
-		margin-left: 40px;
-		&::before {
-			content: "";
-			width: 20px;
-			height: 20px;
-			position: absolute;
-			top: 21px;
-			left: -40px;
-			background: no-repeat url("../img/Contacts.png");
-		}
-		&::after {
-			content: "";
-			position: absolute;
-			top: 25px;
-			left: 96%;
-			width: 30px;
-			height: 30px;
-			background: no-repeat url("../img/news_arrow_black.png");
-			transform: rotate(90deg);
-
-		}
-		
-	
 	}
 	
 }
@@ -483,50 +479,65 @@ h2 {
 .tab-active p {
 	color: $orange-color;
 	position: relative;
-	&::before {
-		content: "";
-			width: 20px;
-			height: 20px;
-			position: absolute;
-			top: 21px;
-			left: -40px;
-			background: center / contain no-repeat url("../img/Contacts_orange.png");
-	}
-
+	
 }
-
-
-.tab-active {
-	& p::after {
-		transform: rotate(270deg);
-		background: no-repeat url("../img/news_arrow_orange.png")
-	}
-}
-
-
 
 
 .tab-title_flex {
 	display: flex;
 	justify-content: space-between;
 	cursor: pointer;
+	position: relative;
+	left: 50px;
+	
+	& p::before {
+		content: "";
+		position: absolute;
+		margin-top: 16px;
+		width: 30px;
+		height: 30px;
+		left: -44px;
+		clip-path: url('#man');
+		background-color: #000;
+
+	}
+	& p::after {
+		content: "";
+		position: absolute;
+		margin-top: 22px;
+		right: 40px;
+		width: 40px;
+		height: 20px;
+		clip-path: url('#arrow');
+		background-color: #000;
+
+	}
+	& p:hover {
+		color: #f8b017;
+	}
+	& p:hover::before {
+		background-color: $orange-color;
+	}
+	& p:hover::after {
+		background-color: $orange-color;
+	}
 }
 
-.arrow {
-	margin-top: 10px;
-	width: 20px;
-	height: 20px;
-	background: no-repeat url("../img/news_arrow_black.png");
-	transform: rotate(90deg);
+.tab-active {
+	& p::before{
+		background-color: $orange-color;
+	}
+	& p::after {
+		clip-path: url('#arrow');
+		background-color: $orange-color;
+		transform: rotate(180deg);
+
+	}
 }
 
-.arrow-active {
-	margin-top: 10px;
-	width: 20px;
-	height: 20px;
-	background: no-repeat url("../img/news_arrow_orange.png");
-	transform: rotate(270deg);	
-}
+
+
+
 
 .tabs-phone {
 	margin-top: 25px;
@@ -568,7 +579,7 @@ h2 {
 		letter-spacing: 0.04em;
 		position: relative;
 		padding-left: 110px;
-		transition-duration: 0.2s;
+		transition-duration: 0.3s;
 		transition: color;
 	}
 	& a::before {
@@ -578,13 +589,20 @@ h2 {
 		top: -50%;
 		width: 50px;
 		height: 60px;
-		background: no-repeat  center / contain url("../img/doc.png");
+		background-color: #000;
+		clip-path: url('#doc');
+		transition: 0.2s;
+		// background: no-repeat  center / contain url("../img/doc.png");
+
+
 	}
 
 	& a:hover {
 		color: $orange-color;
 		&::before{
-			background: no-repeat  center / contain url("../img/doc_orange.png");
+			background-color: $orange-color;
+			clip-path: url('#doc');
+	
 		}
 	}
 }
@@ -754,98 +772,7 @@ h2 {
 .slider {
 	margin-top: 60px;
 }
-//sticky menu
-
-.logo-min{
-	display: block;
-	position: relative;
-	left: -70px;
-	z-index: 1;
-}
-.logo-min_sticky{
-	width: 40px;
-	height: 40px;
-	display: block !important;
-}
-.header_nav{
-	transition-duration: 1s;
-	transition: opacity;
-}
-.sticky {
-	opacity: 1;
-	position: fixed;
-	z-index: 100;
-	top: -70px;
-	left: 0;
-	background: #000;
-
-}
-
-.cabinet {
-	display: none;
-}
-
-.logo-stiky {
-	position: absolute;
-	transition: 0.4s top;
-	top: -200%;
-}
-.burger {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: #000;
-	color: #fff;
-	z-index: 55;
-	display: flex;
-	flex-direction: column;
-	& a {
-		margin: 20px auto;
-		color: $orange-color;
-		font-size: 1rem;
-		text-transform: uppercase;
-
-		&:hover {
-			color: #fff;
-		}
-	}
-}
-.logo-burger {
-	margin: 20px auto;
-	box-sizing: 30px;
-
-}
-
-.burger-span {
-	cursor: pointer;
-	width: 30px;
-	height: 6px;
-	background: #fff;
-	position: fixed;
-	right: 60px;
-	top: 45px;
-	z-index: 6666669999;
-	opacity: 0;
-	&::before{
-		content: "";
-		position: absolute;
-		top: -10px;
-		width: 30px;
-		height: 5px;
-		background: #fff;
-	}
-	&::after{
-		content: "";
-		position: absolute;
-		top: 10px;
-		width: 30px;
-		height: 5px;
-		background: #fff;
-	}
-}
-
+// 
 //
 .burger-active {
 	display: none;

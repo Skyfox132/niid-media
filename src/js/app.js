@@ -51,14 +51,33 @@ tabs();
 
 var swiper = new Swiper(".swiper", {
   modules: [ Navigation, Pagination ],
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 0,
     centeredSlides: false,
     grabCursor: true,
+    loop: true,
     pagination: {
       el: ".swiper-scrollbar",
       clickable: true,
     },
+    breakpoints: {
+      // when window width is >= 520px
+      520: {
+        slidesPerView: 2,
+      },
+      // when window width is >= 800px
+      800: {
+        slidesPerView: 3,
+      },
+      // when window width is >= 960px
+      960: {
+        slidesPerView: 4,
+      },
+      // when window width is >= 1440px
+      1440: {
+        slidesPerView: 5,
+      }
+    }
   });
 
 

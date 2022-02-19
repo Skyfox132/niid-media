@@ -14,9 +14,9 @@ export default ()=>{
         gsap.to(el, {
             scrollTrigger: {
                 trigger: el,
-                start: "top center+=15%",
-                end: "bottom bottom-=12%",
-                markers: false,
+                start: "center center-=15%",
+                end: "bottom bottom-=5%",
+                markers: true,
                 onEnter: ()=>{
                     el.classList.remove("dots-active")
                     el.classList.add("dots-active")

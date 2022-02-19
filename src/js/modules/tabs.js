@@ -1,7 +1,7 @@
 export default()=> {
     const acc = document.querySelectorAll(".tab-title_flex");
     let i;
-    const arrow = document.querySelectorAll(".arrow")
+    const tabIcon = document.querySelectorAll(".tab-icon")
 
     for (i = 0; i < acc.length; i++) {
         acc[i].addEventListener("click", function() {
