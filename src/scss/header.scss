@@ -1,0 +1,110 @@
+$orange-color: #F8B017;
+
+body{
+    font-size: 16px;
+    line-height: 18px;
+}
+.empty-visible {
+    height: 184px;
+}
+
+.menu-nav {
+    max-width: 1280px;
+    margin: 10px auto;
+}
+
+
+.mainmenu {
+    position: absolute;
+    transition: top, height;
+    transition-duration: .7s;
+    width: 100%;
+    height: 55px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 0.7rem;
+    line-height: 140.62%;
+    background: #000;
+    letter-spacing: 0.08em;
+    color: #FFFFFF;
+    top: 70px;
+}
+
+.menu-nav {
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    width: 148px;
+    height: 148px;
+    position: relative;
+    transform: translateY(-50px);
+}
+.logo-mini {
+    position: relative;
+    transform: translateX(-74px);
+    opacity: 0;
+    top: -5px;
+}
+
+.navigation {
+    display: flex;
+    flex: 1;
+    padding-right: 20px;
+    justify-content: flex-end;
+}
+
+.menu-link li{
+    padding: 13px 0;
+    display: inline-block;
+    margin-left: 14px;
+    & a{
+        transition: color;
+        transition-duration: .5s;
+
+    }
+    &:hover {
+        color: $orange-color;
+        border-bottom: 3px solid $orange-color;
+    }
+}
+.slogan {
+    position: relative;
+    max-width: 300px;
+    line-height: 1rem;
+    padding-top: 3px;
+}
+
+
+.stick-menu {
+    margin-top: 0px;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 55px;
+    opacity: 1;
+
+}
+
+.slogan-margin {
+    line-height: 2rem;
+}
+
+.logo-min__position {
+    opacity: 1;
+    left: 150px;
+}
+
+.logo-itm {
+    transition-duration: 0.5s;
+    transition: width;
+}

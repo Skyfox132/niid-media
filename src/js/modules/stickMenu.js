@@ -1,11 +1,26 @@
-
 export default ()=>{
-    window.addEventListener("scroll", function(){
-        const menu = document.querySelector(".header_nav")
-        const logo = document.querySelector(".logo-img")
-        const logomin = document.querySelector(".logo-min-img")
-        menu.classList.toggle("sticky", window.scrollY > 100)
-        logo.classList.toggle("logo-stiky", window.scrollY > 100)
-        logomin.classList.toggle("logo-min_sticky", window.scrollY > 100)
-    })
+    window.onscroll = () => {
+        let header = document.querySelector(".mainmenu")
+        let logo   = document.querySelector(".logo-itm")
+        let logoMin = document.querySelector(".logo-mini")
+        let slogan = document.querySelector(".slogan-text")
+      
+        if(window.pageYOffset > 240) {
+            header.style.opacity = "1"
+            header.classList.add("stick-menu")
+            logo.style.width = "0px";
+            logoMin.classList.add("logo-min__position")
+            slogan.textContent = "НИИД"
+            slogan.classList.add("slogan-margin")
+
+        }  else {
+            header.classList.remove("stick-menu")
+            logo.style.width = "148px";
+            logoMin.classList.remove("logo-min__position")
+            slogan.textContent = "НАУЧНО-ИССЛЕДОВАТЕЛЬСКИЙ ИНСТИТУТ ИЗУЧЕНИЯ ПРИРОДЫ ДЕНЕГ"
+            slogan.classList.remove("slogan-margin")
+        }
+    
+    }
+
 }

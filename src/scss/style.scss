@@ -2,6 +2,7 @@
 @import "footer";
 @import "null";
 @import 'swiper';
+@import "header";
 
 /* variable */
 $orange-color: #f8b017;
@@ -105,18 +106,6 @@ h2 {
 
 
 
-.header_menu a {
-	text-decoration: none;
-	&:hover {
-		color: #f8b017;
-	}
-	&:visited {
-		font-size: 2rem;
-	}
-}
-
-
-
 
 
 
@@ -131,89 +120,13 @@ h2 {
 	justify-content: space-between;
 }
 
-.header_nav {
-	font-size: 0.85rem;
-	width: 100%;
-	font-family: Inter;
-	font-size: 0.67rem;
-	font-style: normal;
-	font-weight: 800;
-	line-height: 15px;
-	letter-spacing: 0.08em;
-	text-align: left;
-
-}
-
-.cabinet {
-	display: block;
-	max-width: 1280px;
-	margin: 0 auto;
-	height: 30px;
-	display: flex;
-	justify-content: right;
-}
-
-.cabinet a {
-	margin: 30px 50px 30px 15px;
-	width: 20px;
-	height: 20px;
-	background: center / contain no-repeat url("../img/Contacts.png")
-}
-
-.main-menu {
-	display: block;
-	position: sticky;
-	top: 10px;
-	height: 55px;
-	color: #fff;
-	margin-top: 70px;
-	width: 100%;
-	background: #000;
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;	
-}
-
-
-.logo {
-	width: 148px;
-	height: 148px;
-	position: relative;
-	z-index: 2;
-}
-
-
-
-.header_menu {
-	color: #fff;
-}
-
-.header_menu a {
-
-		margin-left: 30px;
-}
-
-.header_menu a:last-child {
-	margin-right: 100px;
-}
-.slogan {
-	max-width: 300px;
-}
-.logowrap{
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-}
-.slogan {
-	margin-left: 25px;
-}
-
 /* wrapper*/
 
 .wraper {
 	margin: 0 auto;
 	max-width: 100%;
 }
+
 .wrap{
 	max-width: 1075px;
 	margin: 0 auto;
@@ -221,7 +134,7 @@ h2 {
 /* title block*/
 
 .title {
-	margin: 100px auto 0px;
+	margin: 200px auto 0px;
 	& h1 {
 		
 
