@@ -16,7 +16,7 @@ export default ()=>{
                 trigger: el,
                 start: "center center-=15%",
                 end: "bottom bottom-=5%",
-                markers: true,
+                markers: false,
                 onEnter: ()=>{
                     el.classList.remove("dots-active")
                     el.classList.add("dots-active")

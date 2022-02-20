@@ -108,3 +108,17 @@ body{
     transition-duration: 0.5s;
     transition: width;
 }
+
+.cabinet {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: -55px;
+    clip-path: url("#man");
+    background-color: #000;
+    cursor: pointer;
+    &:hover {
+        background-color: $orange-color;
+    }
+}
+
