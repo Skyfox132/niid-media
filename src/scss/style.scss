@@ -136,6 +136,7 @@ h2 {
 
 .orange {
 	color: $orange-color !important;
+	cursor: pointer;
 }
 
 .footer-links {
@@ -471,9 +472,11 @@ h2 {
 	margin-top: 60px;
 }
 .tab-text{
-	display: none;
+	transition: transform 0.46s ease;
+	transform: scaleY(0);
 	overflow: hidden;
 	margin-left: 40px;
+	max-height: 0;
 	& h4 {
 		margin-top: 20px;
 		&:first-child{
@@ -487,8 +490,8 @@ h2 {
 }
 
 .tab-text-active {
-
-	display: block;
+	max-height: 100%;
+	transform: scaleY(1);
 }
 
 .tab-icon {
@@ -613,6 +616,7 @@ h2 {
 	letter-spacing: 0.06em;
 	border: none;
 	&:hover {
+		transition: 0.2s;
 		border: 3px solid #000;
 	}
 }

@@ -593,6 +593,7 @@ h2 {
 
 .orange {
   color: #f8b017 !important;
+  cursor: pointer;
 }
 
 .footer-links {
@@ -890,9 +891,11 @@ h2 {
 }
 
 .tab-text {
-  display: none;
+  transition: transform 0.46s ease;
+  transform: scaleY(0);
   overflow: hidden;
   margin-left: 40px;
+  max-height: 0;
 }
 .tab-text h4 {
   margin-top: 20px;
@@ -906,7 +909,8 @@ h2 {
 }
 
 .tab-text-active {
-  display: block;
+  max-height: 100%;
+  transform: scaleY(1);
 }
 
 .tab-icon {
@@ -1018,6 +1022,7 @@ h2 {
   border: none;
 }
 .ancet-btn:hover {
+  transition: 0.2s;
   border: 3px solid #000;
 }
 
