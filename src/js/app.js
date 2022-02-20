@@ -105,14 +105,14 @@ gsap.to("#bg", {
 
 
 
-
+const burger_icon = document.querySelector(".burger_icon")
 const burger = document.querySelector(".burger")
 const links = document.querySelector(".menu-link")
 const logo = document.querySelector(".logo")
 const cabinet = document.querySelector(".cabinet")
 
 
-burger.addEventListener("click", function() {
+burger_icon.addEventListener("click", function() {
     links.classList.toggle("menu-link_active")
     document.body.classList.toggle('lock');
     this.classList.toggle("burger_active")

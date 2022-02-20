@@ -7,6 +7,7 @@ export default ()=>{
         let width = document.documentElement.clientWidth
 
 
+        if(width > 801){
             if(window.pageYOffset > 230) {
                 header.style.opacity = "1"
                 header.classList.add("stick-menu")
@@ -16,7 +17,7 @@ export default ()=>{
                 slogan.classList.add("slogan-margin")
             
 
-            } else {
+            }else {
 
                 header.classList.remove("stick-menu")
                 logo.style.width = "148px";
@@ -25,6 +26,7 @@ export default ()=>{
                 slogan.classList.remove("slogan-margin")
 
             }
-
+        
+    }
     }
 }

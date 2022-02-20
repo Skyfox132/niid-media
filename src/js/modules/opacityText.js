@@ -18,7 +18,7 @@ export default ()=>{
             },
 
             opacity: 1,
-            duration: 2,
+            duration: 1,
 
         })
         
