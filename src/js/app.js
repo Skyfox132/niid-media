@@ -7,9 +7,11 @@ import scrollBullet from "./modules/scrollBullet.js";
 import stickMenu from "./modules/stickMenu.js";
 import tabs from "./modules/tabs.js";
 import opacityText from "./modules/opacityText.js";
+import stickMenuRefactor from "./modules/stickMenu-refactor.js";
 
 
-stickMenu();
+// stickMenu();
+stickMenuRefactor();
 scrollBullet();
 tabs();
 opacityText();
