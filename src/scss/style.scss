@@ -643,6 +643,7 @@ h2 {
 		box-sizing: border-box;
 		font-size: 1.06rem;
 		padding: 15px;
+		background-color: #fff;
 		color: #808080;
 		&:focus {
 			outline: none;
@@ -789,6 +790,13 @@ h2 {
 .burger-active {
 	display: none;
 }
+
+.swiper-pagination-horizontal {
+	height: 12px;
+	background: #808080;
+	width: 100%;
+}
+
 
 //
 @media all and (max-width: 1270px) { 
@@ -1007,7 +1015,7 @@ h2 {
 		   justify-content: center;
 		   align-items: center;
 		   transition: left, 0.4s;
-		   right: -130%;
+		   left: -130%;
 		   top: 0;
 			&::after{
 				position: absolute;
@@ -1025,7 +1033,7 @@ h2 {
 		   }
 	   }
 	   .menu-link_active {
-		   right: 0;
+		   left: 0;
 		   & li:hover{
 			   border-bottom: none;
 			   & a:hover {

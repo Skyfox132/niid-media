@@ -6,11 +6,17 @@ import Swiper, { Navigation, Pagination } from 'swiper';
 import scrollBullet from "./modules/scrollBullet.js";
 import stickMenu from "./modules/stickMenu.js";
 import tabs from "./modules/tabs.js";
+import opacityText from "./modules/opacityText.js";
 
 
 stickMenu();
 scrollBullet();
 tabs();
+opacityText();
+
+
+
+
 
 
 
@@ -74,7 +80,7 @@ var swiper = new Swiper(".swiper", {
         slidesPerView: 4,
       },
       // when window width is >= 1440px
-      1440: {
+      1441: {
         slidesPerView: 5,
       },
       // when window width is >= 1920px
@@ -105,7 +111,6 @@ const links = document.querySelector(".menu-link")
 const logo = document.querySelector(".logo")
 const cabinet = document.querySelector(".cabinet")
 
-console.log(burger);
 
 burger.addEventListener("click", function() {
     links.classList.toggle("menu-link_active")
@@ -114,3 +119,4 @@ burger.addEventListener("click", function() {
     logo.classList.toggle("logo_active")
     cabinet.classList.toggle("cabinet_active")
 })
+
