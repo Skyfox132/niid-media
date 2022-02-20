@@ -5,9 +5,9 @@ export default ()=>{
         let logoMin = document.querySelector(".logo-mini")
         let slogan = document.querySelector(".slogan-text")
         let width = document.documentElement.clientWidth
+        console.log(width);
 
-
-        if(width > 801){
+        if(width > 811){
             if(window.pageYOffset > 230) {
                 header.style.opacity = "1"
                 header.classList.add("stick-menu")
@@ -17,7 +17,7 @@ export default ()=>{
                 slogan.classList.add("slogan-margin")
             
 
-            }else {
+            } else {
 
                 header.classList.remove("stick-menu")
                 logo.style.width = "148px";
@@ -27,6 +27,6 @@ export default ()=>{
 
             }
         
-    }
+         }
     }
 }

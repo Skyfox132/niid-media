@@ -537,11 +537,9 @@ h2 {
   position: relative;
 }
 
-.dots {
-  transition: background, 0.5s;
-}
 .dots::after {
   content: "";
+  transition: background-color, 0.3s;
   position: absolute;
   top: 17px;
   left: -7vw;
@@ -568,8 +566,10 @@ h2 {
   height: 42px;
   width: 42px;
   border-radius: 50%;
+  transition-duration: 0.5s;
+  transition: background-color, 0.3s;
   border: solid 3px #000;
-  background: #000;
+  background-color: #000;
 }
 .dots-active::before {
   content: "";
@@ -632,6 +632,26 @@ h2 {
   line-height: 32px;
   letter-spacing: 0.04em;
   text-align: left;
+}
+
+.swiper-scrollbar {
+  height: 20px;
+}
+
+.swiper-scrollbar-drag {
+  background-color: #808080;
+  position: absolute;
+  left: 1%;
+  bottom: 0px;
+  z-index: 5;
+  height: 6px;
+  width: 98%;
+  border-radius: 3px;
+  opacity: 0.5;
+}
+
+.swiper-wrapper {
+  height: 94%;
 }
 
 .swiper {

@@ -2,7 +2,7 @@ import * as flsFunctions from "./modules/functions.js";
 flsFunctions.isWebp();
 import { gsap } from "gsap";
 // import Swiper from 'swiper';
-import Swiper, { Navigation, Pagination } from 'swiper';
+import Swiper, { Navigation, Pagination, Scrollbar } from 'swiper';
 import scrollBullet from "./modules/scrollBullet.js";
 import stickMenu from "./modules/stickMenu.js";
 import tabs from "./modules/tabs.js";
@@ -53,18 +53,17 @@ opacityText();
 // };
 
 
-
-
 var swiper = new Swiper(".swiper", {
-  modules: [ Navigation, Pagination ],
+    modules: [ Navigation, Pagination, Scrollbar],
     slidesPerView: 1,
     spaceBetween: 0,
     centeredSlides: false,
     grabCursor: true,
-    loop: true,
-    pagination: {
+    loop: false,
+    scrollbar: {
       el: ".swiper-scrollbar",
-      clickable: true,
+      hide: false,
+      draggable:true,
     },
     breakpoints: {
       // when window width is >= 520px
@@ -89,7 +88,6 @@ var swiper = new Swiper(".swiper", {
       }
     }
   });
-
 
 
 
