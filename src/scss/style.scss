@@ -1092,6 +1092,28 @@ h2 {
 	.dots::before{
 		left: -165px;
 	}
+
+	.mainmenu {
+		height: 230px;
+		position: absolute;
+		top: 0;
+	}
+	.logo {
+		position: absolute;
+		width: 110px;
+		height: auto;
+		top: 40%;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.slogan {
+		position: absolute;
+		width: 100%;
+		top: 160px;
+		left: 50%;
+		transform: translateX(-50%);
+		text-align: center;
+	}
    }
 
 

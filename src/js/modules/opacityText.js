@@ -11,7 +11,7 @@ export default ()=>{
         gsap.to(el,{
             scrollTrigger: {
                 trigger: el,
-                markers: true,
+                markers: false,
                 start: "top bottom",
                 end: "bottom center"
                 
@@ -29,7 +29,7 @@ export default ()=>{
         gsap.to(el,{
             scrollTrigger: {
                 trigger: el,
-                markers: true,
+                markers: false,
                 start: "top bottom",
                 end: "bottom center"
                 
