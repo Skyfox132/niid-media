@@ -66,7 +66,7 @@ var swiper = new Swiper(".swiper", {
         slidesPerView: 2,
       },
       // when window width is >= 800px
-      800: {
+      801: {
         slidesPerView: 3,
       },
       // when window width is >= 960px
@@ -76,6 +76,10 @@ var swiper = new Swiper(".swiper", {
       // when window width is >= 1440px
       1440: {
         slidesPerView: 5,
+      },
+      // when window width is >= 1920px
+      1920: {
+        slidesPerView: 5.5,
       }
     }
   });
@@ -91,4 +95,22 @@ gsap.to("#bg", {
     scrub: 1
   },
     y : -300,
+})
+
+
+
+
+const burger = document.querySelector(".burger")
+const links = document.querySelector(".menu-link")
+const logo = document.querySelector(".logo")
+const cabinet = document.querySelector(".cabinet")
+
+console.log(burger);
+
+burger.addEventListener("click", function() {
+    links.classList.toggle("menu-link_active")
+    document.body.classList.toggle('lock');
+    this.classList.toggle("burger_active")
+    logo.classList.toggle("logo_active")
+    cabinet.classList.toggle("cabinet_active")
 })
