@@ -80,11 +80,11 @@ var swiper = new Swiper(".swiper", {
       },
       // when window width is >= 1440px
       1441: {
-        slidesPerView: 5,
+        slidesPerView: 4.5,
       },
       // when window width is >= 1920px
-      1920: {
-        slidesPerView: 5.5,
+      1880: {
+        slidesPerView: 4,
       }
     }
   });
