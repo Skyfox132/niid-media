@@ -9,12 +9,15 @@ body{
 }
 
 .menu-nav {
+
     max-width: 1280px;
-    margin: 10px auto;
+    margin: 10px 42px 10px;
 }
 
 
 .mainmenu {
+    display: flex;
+    justify-content: center;
     position: absolute;
     transition: top, height;
     transition-duration: .7s;

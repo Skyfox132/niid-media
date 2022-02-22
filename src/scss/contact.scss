@@ -5,8 +5,7 @@ $orange-color: #F8B017;
     margin: 150px auto 0;
 }
 .contacts {
-    max-width: 1200px;
-    width: 100%;
+    max-width: 1380px;
     margin: 0 auto;
 }
 
@@ -24,6 +23,7 @@ $orange-color: #F8B017;
 .contact_list li{
     line-height: 190%;
     margin-top: 72px;
+    position: relative;
   }
 .contact_list li a{
     font-family: Inter;
@@ -53,6 +53,7 @@ $orange-color: #F8B017;
     margin: 0 auto;
     max-width: 1050px;
     padding: 40px 0;
+    transition: background-color, 0.4s;
     & a:first-child{
         padding-left: 30px;
     }
@@ -60,6 +61,10 @@ $orange-color: #F8B017;
         margin-right: 30px;
         height: 50px;
         width: 50px;
+        &:hover span {
+            transition: background-color, 0.4s;
+            background-color: #fff;
+        }
     }
     & a span {
         background-color: #000;
@@ -81,7 +86,8 @@ $orange-color: #F8B017;
         background: no-repeat url("../img/call-icon.png") 0 0;
         width: 430px;
         height: 40px;
-        right: 79%;
+        left: 0;
+        transform: translateX(-114%);
     }
 }
 .contact-icon_2 {
@@ -91,7 +97,8 @@ $orange-color: #F8B017;
         background: no-repeat url("../img/mail-icon.png") 0 0;
         width: 430px;
         height: 40px;
-        right: 79%;
+        left: 0;
+        transform: translateX(-114%);
     }
     
 }
@@ -102,12 +109,16 @@ $orange-color: #F8B017;
         background: no-repeat url("../img/adress-icon.png") 0 0;
         width: 430px;
         height: 40px;
-        right: 79%;
+        left: 0;
+        transform: translateX(-114%);
     }
 }
 .copyright {
     height: 50px;
-}
+    }
 svg {
+    position: fixed;
+    bottom: 0;
     height: 0px;
+    box-sizing: border-box;
 }

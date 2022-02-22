@@ -858,7 +858,9 @@ h2 {
 	background: #808080;
 	width: 100%;
 }
-
+.slogan-mini {
+	display: none;
+}
 
 //
 
@@ -882,16 +884,34 @@ h2 {
 	.header-menu a { 
 	 margin-left: 15px; 
 	} 
-	.slogan p { 
+	.slogan {
+		max-width: 200px;
+
+	}
+	.slogan span { 
+
 	 font-size: 0.5rem; 
+	 
 	} 
 	.slider { 
 	 height: 350px; 
 	} 
+	.slogan-text {
+		font-size: 0.5rem;
+	}
    } 
    
+  
 
    @media all and (max-width: 1024px) {
+		.slogan-mini {
+			font-size: .6rem !important;
+			padding: 10px 0;
+			display: block;
+		}
+		.slogan-text {
+			display: none;
+		}
 
 		h2{
 			font-size: 2.5rem;
@@ -899,7 +919,7 @@ h2 {
 
 	   .menu-link a{
 		   font-size: 0.5rem;
-		   margin-left: 5px;
+		   margin-left: 0px;
 	   }
 	   .slogan-text {
 		   font-size: 0.5rem;
