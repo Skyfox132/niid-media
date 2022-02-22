@@ -1262,6 +1262,10 @@ h2 {
   .swiper-slide {
     height: 100%;
   }
+
+  .swiper {
+    height: 500px;
+  }
 }
 @media all and (max-width: 1270px) {
   .wrap {
