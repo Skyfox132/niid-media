@@ -1,0 +1,113 @@
+
+$orange-color: #F8B017;
+.wrap-contacts {
+    width: 100%;
+    margin: 150px auto 0;
+}
+.contacts {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Set the size of the div element that contains the map */
+#map {
+    height: 600px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+  }
+
+.contact_list{
+    margin-top: 250px !important;
+}
+.contact_list li{
+    line-height: 190%;
+    margin-top: 72px;
+  }
+.contact_list li a{
+    font-family: Inter;
+    font-size: 1.1rem;
+    line-height: 170%;
+    letter-spacing: 6%;
+    color: #000;
+    transition: color, 0.3s;
+    &:hover {
+    color: $orange-color;
+
+    }
+}
+
+.contacts.unwrap {
+    padding: 0 190px;
+}
+
+.contact-socials {
+    height: 120px;
+    background-color: $orange-color;
+    margin-top: 40px;
+}
+.social_container {
+    position: relative;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1050px;
+    padding: 40px 0;
+    & a:first-child{
+        padding-left: 30px;
+    }
+    & a {
+        margin-right: 30px;
+        height: 50px;
+        width: 50px;
+    }
+    & a span {
+        background-color: #000;
+
+        display: inline-block;
+        height: 50px;
+        width: 50px;
+        &:hover {
+            background-color: #fff;
+        }
+    }
+
+}
+
+.contact-icon_1 {
+    &:before {
+        content: "";
+        position: absolute;
+        background: no-repeat url("../img/call-icon.png") 0 0;
+        width: 430px;
+        height: 40px;
+        right: 79%;
+    }
+}
+.contact-icon_2 {
+    &:before {
+        content: "";
+        position: absolute;
+        background: no-repeat url("../img/mail-icon.png") 0 0;
+        width: 430px;
+        height: 40px;
+        right: 79%;
+    }
+    
+}
+.contact-icon_3 {
+    &:before {
+        content: "";
+        position: absolute;
+        background: no-repeat url("../img/adress-icon.png") 0 0;
+        width: 430px;
+        height: 40px;
+        right: 79%;
+    }
+}
+.copyright {
+    height: 50px;
+}
+svg {
+    height: 0px;
+}
