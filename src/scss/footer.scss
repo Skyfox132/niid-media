@@ -42,7 +42,8 @@ $orange-color: #f8b017;
 }
 
 .social_links {
-
+    display: flex;
+    align-items: center;
     
 
     & a {

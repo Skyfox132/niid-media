@@ -275,7 +275,11 @@ h2 {
 }
 
 
-
+.news a {
+	margin-left: 30px;
+	font-size: 1.5rem;
+	font-weight: 700;
+}
 
 
 .actual_article {
@@ -293,21 +297,6 @@ h2 {
 		text-align: left;
 
 	}
-	&::before {
-		content: "";
-		position: absolute;
-		width: 20px;
-		height: 20px;
-		background: no-repeat url("../img/news_arrow_black.png");
-		margin: 0 auto;
-		left: -20px;
-		top: 7px;
-		
-	}
-	&:hover::before {
-		background: no-repeat url("../img/news_arrow_orange.png");
-
-	}
 	& h3 {
 		font-family: Inter;
 		font-size: 21px;
@@ -316,6 +305,21 @@ h2 {
 		line-height: 32px;
 		letter-spacing: 0.04em;
 		text-align: left;
+		&::before {
+			content: "";
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			background: no-repeat url("../img/news_arrow_black.png");
+			margin: 0 auto;
+			left: -20px;
+			top: 7px;
+			
+		}
+		&:hover::before {
+			background: no-repeat url("../img/news_arrow_orange.png");
+	
+		}
 
 	}
 	& h3:hover {
@@ -623,7 +627,9 @@ h2 {
 	line-height: 150%;
 	letter-spacing: 0.06em;
 	border: none;
+	cursor: pointer;
 	&:hover {
+		transform: translateY(-4px);
 		transition: 0.2s;
 		border: 3px solid #000;
 	}
@@ -806,6 +812,8 @@ h2 {
 	border: none;
 	transition: 0.2s;
 	&:hover {
+		transform: translateY(-4px);
+		transition: 0.2s;
 		border: 3px solid #000;
 		cursor: pointer;
 	}
