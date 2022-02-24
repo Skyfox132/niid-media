@@ -863,6 +863,22 @@ h2 {
   letter-spacing: 0.08em;
   text-align: left;
 }
+<<<<<<< HEAD
+=======
+.actual_article::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: no-repeat url("../img/news_arrow_black.png");
+  margin: 0 auto;
+  left: -20px;
+  top: 7px;
+}
+.actual_article:hover::before {
+  background: no-repeat url("../img/news_arrow_orange.png");
+}
+>>>>>>> 8b7976c02ee2aa7e118172a201f544e076bb702b
 .actual_article h3 {
   font-family: Inter;
   font-size: 21px;
@@ -872,6 +888,7 @@ h2 {
   letter-spacing: 0.04em;
   text-align: left;
 }
+<<<<<<< HEAD
 .actual_article h3::before {
   content: "";
   position: absolute;
@@ -885,6 +902,8 @@ h2 {
 .actual_article h3:hover::before {
   background: no-repeat url("../img/news_arrow_orange.png");
 }
+=======
+>>>>>>> 8b7976c02ee2aa7e118172a201f544e076bb702b
 .actual_article h3:hover {
   color: #f8b017;
 }
@@ -1162,7 +1181,10 @@ h2 {
   cursor: pointer;
 }
 .ancet-btn:hover {
+<<<<<<< HEAD
   transform: translateY(-4px);
+=======
+>>>>>>> 8b7976c02ee2aa7e118172a201f544e076bb702b
   transition: 0.2s;
   border: 3px solid #000;
 }
