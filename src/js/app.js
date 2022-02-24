@@ -91,15 +91,24 @@ var swiper = new Swiper(".swiper", {
 
 
 
+  gsap.to("#bg", {
+    scrollTrigger : {
+      scrub: 1
+    },
+      y : -200,
+  })
+
+  
+
+  gsap.to("#bg-contact", {
+    scrollTrigger : {
+      scrub: 1
+    },
+      y : -1800,
+  })
+  
 
 
-
-gsap.to("#bg", {
-  scrollTrigger : {
-    scrub: 1
-  },
-    y : -300,
-})
 
 
 

@@ -28,7 +28,7 @@ $orange-color: #F8B017;
 .contact_list li a{
     font-family: Inter;
     font-size: 1.1rem;
-    line-height: 170%;
+    line-height: 208%;
     letter-spacing: 6%;
     color: #000;
     transition: color, 0.3s;
@@ -54,11 +54,10 @@ $orange-color: #F8B017;
     max-width: 1050px;
     padding: 40px 0;
     transition: background-color, 0.4s;
-    & a:first-child{
-        padding-left: 30px;
-    }
+
     & a {
-        margin-right: 30px;
+        display: inline-block;
+        margin-left: 30px;
         height: 50px;
         width: 50px;
         &:hover span {
@@ -87,7 +86,7 @@ $orange-color: #F8B017;
         width: 430px;
         height: 40px;
         left: 0;
-        transform: translateX(-114%);
+        transform: translateX(-121%);
     }
 }
 .contact-icon_2 {
@@ -98,7 +97,7 @@ $orange-color: #F8B017;
         width: 430px;
         height: 40px;
         left: 0;
-        transform: translateX(-114%);
+        transform: translateX(-121%);
     }
     
 }
@@ -110,7 +109,7 @@ $orange-color: #F8B017;
         width: 430px;
         height: 40px;
         left: 0;
-        transform: translateX(-114%);
+        transform: translateX(-121%);
     }
 }
 .copyright {
@@ -122,3 +121,182 @@ svg {
     height: 0px;
     box-sizing: border-box;
 }
+
+
+@media only screen and (max-width : 1441px) {
+
+    .contacts {
+        margin-left: 30px;
+    }
+    .social_container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+
+@media only screen and (max-width : 1135px) {
+    
+.contact-icon_1 {
+    &:before {
+        content: "";
+        position: absolute;
+        background: no-repeat url("../img/call-icon.png") 0 0;
+        width: 430px;
+        height: 40px;
+        left: 0;
+        transform: translateX(-115%);
+    }
+}
+.contact-icon_2 {
+    &:before {
+        content: "";
+        position: absolute;
+        background: no-repeat url("../img/mail-icon.png") 0 0;
+        width: 430px;
+        height: 40px;
+        left: 0;
+        transform: translateX(-115%);
+    }
+    
+}
+.contact-icon_3 {
+    &:before {
+        content: "";
+        position: absolute;
+        background: no-repeat url("../img/adress-icon.png") 0 0;
+        width: 430px;
+        height: 40px;
+        left: 0;
+        transform: translateX(-115%);
+    }
+}
+}
+
+@media only screen and (max-width : 801px) {
+   
+   .unwrap {
+    padding: 0px 128px;
+   }
+
+    .contact-icon_1 {
+        &:before {
+            content: "";
+            position: absolute;
+            background: no-repeat url("../img/call-icon.png") 0 0;
+            width: 430px;
+            height: 40px;
+            left: 0;
+            transform: translateX(-121%);
+        }
+    }
+    .contact-icon_2 {
+        &:before {
+            content: "";
+            position: absolute;
+            background: no-repeat url("../img/mail-icon.png") 0 0;
+            width: 430px;
+            height: 40px;
+            left: 0;
+            transform: translateX(-121%);
+        }
+        
+    }
+    .contact-icon_3 {
+        &:before {
+            content: "";
+            position: absolute;
+            background: no-repeat url("../img/adress-icon.png") 0 0;
+            width: 430px;
+            height: 40px;
+            left: 0;
+            transform: translateX(-121%);
+        }
+    }
+    }
+
+
+
+@media only screen and (max-width : 601px) {
+
+
+        .contacts.unwrap {
+        padding: 0px 129px;
+       }
+
+        .social_container a {
+            margin-left: 10px;
+        }
+     
+         .contact-icon_1 {
+             &:before {
+                 content: "";
+                 position: absolute;
+                 background: no-repeat url("../img/call-icon.png") 0 0;
+                 width: 430px;
+                 height: 40px;
+                 left: 0;
+                 transform: translateX(-108%);
+             }
+         }
+         .contact-icon_2 {
+             &:before {
+                 content: "";
+                 position: absolute;
+                 background: no-repeat url("../img/mail-icon.png") 0 0;
+                 width: 430px;
+                 height: 40px;
+                 left: 0;
+                 transform: translateX(-108%);
+             }
+             
+         }
+         .contact-icon_3 {
+             &:before {
+                 content: "";
+                 position: absolute;
+                 background: no-repeat url("../img/adress-icon.png") 0 0;
+                 width: 430px;
+                 height: 40px;
+                 left: 0;
+                 transform: translateX(-108%);
+             }
+         }
+         }
+
+
+
+         @media only screen and (max-width : 601px) {
+
+
+            .contacts.unwrap {
+                padding: 0 120px;
+            }
+            .contact-socials {
+                height: 180px;
+            }
+            .social_container {
+                margin-bottom: 50px;
+
+                display: flex;
+                flex-wrap: wrap;
+                & a{
+                    margin-left: 20px;
+                    margin-top: 10px;
+                }
+                justify-content: flex-start;
+            }
+         }
+
+         @media only screen and (max-width : 458px) {
+            .contacts.unwrap {
+                padding: 0 80px;
+            }
+         }
+         @media only screen and (max-width : 368px) {
+            .contacts.unwrap {
+                padding: 0 70px;
+            }
+         }

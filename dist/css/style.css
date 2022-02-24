@@ -363,7 +363,7 @@ body {
 }
 
 .menu-nav {
-  max-width: 1280px;
+  max-width: 1360px;
   margin: 10px 42px 10px;
 }
 
@@ -418,7 +418,7 @@ body {
 }
 
 .menu-link li {
-  padding: 13px 0;
+  padding: 10px 0 15px;
   display: inline-block;
   margin-left: 14px;
 }
@@ -516,7 +516,7 @@ body {
 .contact_list li a {
   font-family: Inter;
   font-size: 1.1rem;
-  line-height: 170%;
+  line-height: 208%;
   letter-spacing: 6%;
   color: #000;
   transition: color, 0.3s;
@@ -543,11 +543,9 @@ body {
   padding: 40px 0;
   transition: background-color, 0.4s;
 }
-.social_container a:first-child {
-  padding-left: 30px;
-}
 .social_container a {
-  margin-right: 30px;
+  display: inline-block;
+  margin-left: 30px;
   height: 50px;
   width: 50px;
 }
@@ -572,7 +570,7 @@ body {
   width: 430px;
   height: 40px;
   left: 0;
-  transform: translateX(-114%);
+  transform: translateX(-121%);
 }
 
 .contact-icon_2:before {
@@ -582,7 +580,7 @@ body {
   width: 430px;
   height: 40px;
   left: 0;
-  transform: translateX(-114%);
+  transform: translateX(-121%);
 }
 
 .contact-icon_3:before {
@@ -592,7 +590,7 @@ body {
   width: 430px;
   height: 40px;
   left: 0;
-  transform: translateX(-114%);
+  transform: translateX(-121%);
 }
 
 .copyright {
@@ -606,6 +604,152 @@ svg {
   box-sizing: border-box;
 }
 
+@media only screen and (max-width: 1441px) {
+  .contacts {
+    margin-left: 30px;
+  }
+
+  .social_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 1135px) {
+  .contact-icon_1:before {
+    content: "";
+    position: absolute;
+    background: no-repeat url("../img/call-icon.png") 0 0;
+    width: 430px;
+    height: 40px;
+    left: 0;
+    transform: translateX(-115%);
+  }
+
+  .contact-icon_2:before {
+    content: "";
+    position: absolute;
+    background: no-repeat url("../img/mail-icon.png") 0 0;
+    width: 430px;
+    height: 40px;
+    left: 0;
+    transform: translateX(-115%);
+  }
+
+  .contact-icon_3:before {
+    content: "";
+    position: absolute;
+    background: no-repeat url("../img/adress-icon.png") 0 0;
+    width: 430px;
+    height: 40px;
+    left: 0;
+    transform: translateX(-115%);
+  }
+}
+@media only screen and (max-width: 801px) {
+  .unwrap {
+    padding: 0px 128px;
+  }
+
+  .contact-icon_1:before {
+    content: "";
+    position: absolute;
+    background: no-repeat url("../img/call-icon.png") 0 0;
+    width: 430px;
+    height: 40px;
+    left: 0;
+    transform: translateX(-121%);
+  }
+
+  .contact-icon_2:before {
+    content: "";
+    position: absolute;
+    background: no-repeat url("../img/mail-icon.png") 0 0;
+    width: 430px;
+    height: 40px;
+    left: 0;
+    transform: translateX(-121%);
+  }
+
+  .contact-icon_3:before {
+    content: "";
+    position: absolute;
+    background: no-repeat url("../img/adress-icon.png") 0 0;
+    width: 430px;
+    height: 40px;
+    left: 0;
+    transform: translateX(-121%);
+  }
+}
+@media only screen and (max-width: 601px) {
+  .contacts.unwrap {
+    padding: 0px 129px;
+  }
+
+  .social_container a {
+    margin-left: 10px;
+  }
+
+  .contact-icon_1:before {
+    content: "";
+    position: absolute;
+    background: no-repeat url("../img/call-icon.png") 0 0;
+    width: 430px;
+    height: 40px;
+    left: 0;
+    transform: translateX(-108%);
+  }
+
+  .contact-icon_2:before {
+    content: "";
+    position: absolute;
+    background: no-repeat url("../img/mail-icon.png") 0 0;
+    width: 430px;
+    height: 40px;
+    left: 0;
+    transform: translateX(-108%);
+  }
+
+  .contact-icon_3:before {
+    content: "";
+    position: absolute;
+    background: no-repeat url("../img/adress-icon.png") 0 0;
+    width: 430px;
+    height: 40px;
+    left: 0;
+    transform: translateX(-108%);
+  }
+}
+@media only screen and (max-width: 601px) {
+  .contacts.unwrap {
+    padding: 0 120px;
+  }
+
+  .contact-socials {
+    height: 180px;
+  }
+
+  .social_container {
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .social_container a {
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 458px) {
+  .contacts.unwrap {
+    padding: 0 80px;
+  }
+}
+@media only screen and (max-width: 368px) {
+  .contacts.unwrap {
+    padding: 0 70px;
+  }
+}
 /* variable */
 :root {
   --swiper-theme-color:$orange-color ;
@@ -636,6 +780,10 @@ h3 {
 .pointer {
   cursor: pointer;
   margin-left: 5px;
+}
+
+p {
+  font-size: 1.2rem;
 }
 
 body {
@@ -787,29 +935,26 @@ h2 {
   height: 400px;
 }
 
-.slide1 {
-  height: 100%;
-  background: center/cover no-repeat url("../img/image11.png");
+.swiper-slide {
+  overflow: hidden;
 }
 
-.slide2 {
+.border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 100%;
-  background: center/cover no-repeat url("../img/image12.png");
+  transition: 0.3s;
+}
+.border:hover {
+  border: 3px solid #f8b017;
 }
 
-.slide3 {
-  height: 100%;
-  background: center/cover no-repeat url("../img/image_13.png");
-}
-
-.slide4 {
-  height: 100%;
-  background: center/cover no-repeat url("../img/image_14.png");
-}
-
-.slide5 {
-  height: 100%;
-  background: center/cover no-repeat url("../img/image11.png");
+.slide-link img {
+  object-fit: cover;
+  width: 100%;
+  min-height: 400px;
 }
 
 /* actual news*/
@@ -851,34 +996,20 @@ h2 {
 .actual_article {
   margin-top: 35px;
   position: relative;
+  margin-left: 20px;
+  padding-left: 15px;
 }
 .actual_article p {
   margin-top: 10px;
   font-family: Inter;
   font-family: Inter;
-  font-size: 11px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 15px;
+  line-height: 140%;
   letter-spacing: 0.08em;
   text-align: left;
 }
-<<<<<<< HEAD
-=======
-.actual_article::before {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background: no-repeat url("../img/news_arrow_black.png");
-  margin: 0 auto;
-  left: -20px;
-  top: 7px;
-}
-.actual_article:hover::before {
-  background: no-repeat url("../img/news_arrow_orange.png");
-}
->>>>>>> 8b7976c02ee2aa7e118172a201f544e076bb702b
 .actual_article h3 {
   font-family: Inter;
   font-size: 21px;
@@ -888,7 +1019,6 @@ h2 {
   letter-spacing: 0.04em;
   text-align: left;
 }
-<<<<<<< HEAD
 .actual_article h3::before {
   content: "";
   position: absolute;
@@ -902,8 +1032,6 @@ h2 {
 .actual_article h3:hover::before {
   background: no-repeat url("../img/news_arrow_orange.png");
 }
-=======
->>>>>>> 8b7976c02ee2aa7e118172a201f544e076bb702b
 .actual_article h3:hover {
   color: #f8b017;
 }
@@ -967,8 +1095,18 @@ h2 {
 }
 
 /*news block*/
+.news_post h3 {
+  font-size: 1rem;
+  line-height: 140%;
+}
+
+.news_post p {
+  margin-left: 29px;
+}
+
 .news_post a {
   color: #000;
+  font-size: 1.3rem;
 }
 
 .news {
@@ -1181,10 +1319,7 @@ h2 {
   cursor: pointer;
 }
 .ancet-btn:hover {
-<<<<<<< HEAD
   transform: translateY(-4px);
-=======
->>>>>>> 8b7976c02ee2aa7e118172a201f544e076bb702b
   transition: 0.2s;
   border: 3px solid #000;
 }
@@ -1238,7 +1373,7 @@ h2 {
 
 /*cooperation*/
 .cooperation {
-  margin-top: 60px;
+  margin-top: 75px;
   margin-bottom: 60px;
   position: relative;
 }
@@ -1350,7 +1485,7 @@ h2 {
 .coop-btn {
   cursor: pointer;
   margin-top: 40px;
-  max-width: 375px;
+  max-width: 221px;
   width: 100%;
   height: 60px;
   background-color: #f8b017;
@@ -1376,9 +1511,6 @@ h2 {
 .slide-link {
   transition-duration: 0.3s !important;
   transition: all;
-}
-.slide-link:hover {
-  border: 3px solid #f8b017;
 }
 
 .slide-link a {
@@ -1782,13 +1914,64 @@ h2 {
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 481px) {
+  .wrap-contacts {
+    margin: 50px auto 0;
+  }
+
+  .footer-container {
+    padding: 10px;
+  }
+
+  .copyright.wrap {
+    height: 100%;
+    margin-top: 30px;
+  }
+  .copyright.wrap p {
+    font-size: 1rem;
+  }
+
+  .wrap {
+    margin-top: 70px;
+  }
+
+  .cabinet {
+    display: none;
+  }
+
+  .menu-nav {
+    margin: 5px;
+  }
+
+  .news h2 {
+    font-size: 1.8rem;
+  }
+
+  .news a {
+    font-size: 1rem;
+  }
+  .news a:first-child {
+    margin-left: 0px;
+  }
+
+  .wrap p {
+    font-size: 0.9rem;
+  }
+
+  .actual_article h3 {
+    font-size: 1rem;
+  }
+
   .wrapper {
     overflow: hidden;
   }
 
-  h2 {
+  .actual_title h2 {
+    font-size: 2rem;
+  }
+
+  .actual_title h2 {
     margin-top: 40px;
-    font-size: 1.3rem;
+    font-size: 2rem;
   }
 
   .title_h1 {
@@ -1815,6 +1998,7 @@ h2 {
 
   .actual_article {
     margin-left: 20px;
+    line-height: 140%;
   }
 
   .actual_article p {

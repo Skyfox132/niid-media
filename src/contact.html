@@ -4,7 +4,7 @@
 	"title":"НИИД контакты"
 	})
 	<body>
-		<span class="background" id="bg"></span>
+		<span class="background" id="bg-contact"></span>
 		@@include('html/header.html',{})
 		<main>
 	
@@ -46,7 +46,8 @@
 					}
 				  </style>
 				  <script>
-					// Initialize and add the map
+
+					  
 					function initMap() {
 					  // The location of Uluru
 					  const uluru = { lat: 55.75194820430505, lng: 37.617734007399335 };
@@ -323,11 +324,14 @@
 						],
 					  });
 
+					  
 					  // The marker, positioned at Uluru
-					  const marker = new google.maps.Marker({
-                        url: "../img/marker.png",
+					  const marker_url = new google.maps.Marker({
+                        url: "img/marker2.png",
 						position: uluru,
 						map: map,
+						size: new google.maps.Size(30, 30),
+						origin: new google.maps.Point(0, 0),
 					  });
 
 
