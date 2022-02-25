@@ -366,13 +366,12 @@
 
 					  
 					  // The marker, positioned at Uluru
-					  const marker_url = new google.maps.Marker({
-                        url: "img/marker2.png",
-						position: uluru,
-						map: map,
-						size: new google.maps.Size(30, 30),
-						origin: new google.maps.Point(0, 0),
-					  });
+					  var iconBase = 'img/';
+						var marker = new google.maps.Marker({
+							position: uluru,
+							map: map,
+							icon: iconBase + 'Subtract.png'
+						});
 
 
 					}
