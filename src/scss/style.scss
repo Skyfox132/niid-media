@@ -66,6 +66,10 @@ h2 {
 
 }
 
+
+
+
+
 .dots {
 	
 	&::after {
@@ -73,20 +77,22 @@ h2 {
 		content: "";
 		transition: background-color, 0.3s;
 		position: absolute;
-		top: 17px;
-		left: -7vw;
+		top: 15px;
 		height: 42px;
 		width: 42px;
+		left: 0;
+		transform: translateX(-230%);
 		border-radius: 50%;
 		border: solid 3px #000;
 	}
 	&::before {
 		content: "";
+		left: 0;
 		position: absolute;
-		top: 38px;
-		left: -37vw;
+		top: 35px;
 		height: 2px;
-		width: 30vw;
+		width: 500px;
+		transform: translateX(-119%);
 		background: #000;
 	}
 }
@@ -96,12 +102,12 @@ h2 {
 	&::after {
 		content: "";
 		position: absolute;
-		top: 17px;
-		left: -7vw;
+		top: 15px;
+		left: 0;
 		height: 42px;
 		width: 42px;
 		border-radius: 50%;
-		transition-duration: 0.5s;
+		transition-duration: 0.3s;
 		transition: background-color, 0.3s;
 		border: solid 3px #000;
 		background-color: #000;
@@ -111,10 +117,10 @@ h2 {
 
 		content: "";
 		position: absolute;
-		top: 38px;
-		left: -37vw;
-		height: 2px;
-		width: 30vw;
+		top: 35px;
+		left: 0;
+		width: 500px;
+		transform: translateX(-119%);
 		background: #000;
 	}
 }
@@ -129,7 +135,6 @@ h2 {
 	transform: translateY(-2000px);
 	background: url("../img/Vector.png") repeat;
 }
-
 
 
 
@@ -156,7 +161,7 @@ h2 {
 	max-width: 100%;
 }
 
-.wrap{
+.wrap {
 	max-width: 1075px;
 	margin: 0 auto;
 }
@@ -923,9 +928,18 @@ h2 {
 }
 
 
+@media all and (max-width: 1441px) { 
+	.title_h1 {
+		margin: 0 40px;
+	}
+}
+
 @media all and (max-width: 1270px) { 
+	.title_h1 {
+		margin: 0 70px;
+	}
 	.wrap { 
-	 padding: 0 80px; 
+	 padding: 0 50px; 
 	} 
 	.header-menu a { 
 	 margin-left: 15px; 
@@ -949,7 +963,11 @@ h2 {
    
   
 
-   @media all and (max-width: 1024px) {
+   @media all and (max-width: 1025px) {
+		.dots-margin {
+			margin-left: 80px;
+			margin-right: 80px;
+		}
 		.slogan-mini {
 			font-size: .6rem !important;
 			padding: 10px 0;
@@ -987,10 +1005,10 @@ h2 {
    } 
 
    @media all and (max-width: 920px) {
-	   h2 {
-		   font-size: 2rem;
-		   line-height: 140%;
-	   }
+		.title_h1 {
+			margin-left: 20px;
+		}
+
 	   .logo {
 		   width: 100px;
 	   }
@@ -1001,30 +1019,56 @@ h2 {
 		font-size: 0.5rem;
 
 	   }
-	   .dots::before { 
-		position: absolute;
-		left: 0;
-		transform: translateX(-118%);
-		top: 35px; 
-	   } 
-	   .dots::after{ 
-		top: 22px;
-		left: -47px; 
-		width: 30px; 
-		height: 30px; 
-	   } 
+	   .wrap {
+		& h2 {
+			font-size: 2.5rem;
+			line-height: 140%;
+		}
+	   }
+	   .dots {
+		   
+		&::after {
+		
+			content: "";
+			transition: background-color, 0.3s;
+			position: absolute;
+			top: 10px;
+			height: 42px;
+			width: 42px;
+			left: 0;
+			transform: translateX(-180%);
+			border-radius: 50%;
+			border: solid 3px #000;
+		}
+		&::before {
+			content: "";
+			left: 0;
+			position: absolute;
+			top: 29px;
+			height: 2px;
+			width: 500px;
+			transform: translateX(-115%);
+			background: #000;
+		}
+	   }
+
    }
 
 
    @media all and (max-width: 810px) { 
-
+	.dots-margin {
+		margin-left: 25px;
+		margin-right: 25px;
+	}
+	.title {
+		margin-top: 140px;
+	}
 	// .wrap:first-child {
 	// 	margin-top: 140px;
 	// }
 	.social_links a{ 
 	 margin-top: 10px; 
 	} 
-
 
 	h2 { 
 	 font-size: 2.5rem; 
@@ -1267,6 +1311,7 @@ h2 {
    }
 
    @media all and (max-width: 430px) {
+
 	.dots-active::before{
 		left: -160px;
 	}
@@ -1294,6 +1339,9 @@ h2 {
 		left: 50%;
 		transform: translateX(-50%);
 		text-align: center;
+	}
+	.wrap h2 {
+		font-size: 1.8rem;
 	}
 	.footer-links{
 		display: none !important;
@@ -1329,6 +1377,19 @@ h2 {
 
 ////////////////////////////////////////////////////////////
    @media only screen and (min-device-width : 320px) and (max-device-width : 481px) {
+	.logo {
+		margin: 0;
+	}
+	.coop-btn {
+		margin: 20px auto !important;
+	}
+	.wrap {
+		padding: 0px !important;
+		& h2 {
+			font-size: 1.5rem;
+		}
+	}
+
 	.menu-link_active{
 		& a {
 			font-size: 1rem;
@@ -1341,7 +1402,7 @@ h2 {
 		top: 30px;
 	}
 	.mainmenu {
-		height: 200px;
+		height: 210px;
 		top: 0px;
 	}
 
@@ -1354,8 +1415,8 @@ h2 {
 	}
 
 	.logo {
-		top: 10px;
-		left: 46%;
+		left: 50%;
+		top: 10%;
 		transform: translateX(-50%);
 	}
 
@@ -1374,6 +1435,7 @@ h2 {
 	}
 	.wrap {
 		margin-top: 70px;
+		
 	}
 	.cabinet{
 		display: none;
