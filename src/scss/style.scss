@@ -1282,9 +1282,10 @@ h2 {
 		position: absolute;
 		width: 100px;
 		height: auto;
-		top: 30%;
+		top: 30px;
 		left: 50%;
 		transform: translateX(-50%);
+
 	}
 	.slogan {
 		position: absolute;
@@ -1328,6 +1329,36 @@ h2 {
 
 ////////////////////////////////////////////////////////////
    @media only screen and (min-device-width : 320px) and (max-device-width : 481px) {
+	.menu-link_active{
+		& a {
+			font-size: 1rem;
+			margin-top: 10px;
+			line-height: 80%;
+		}
+	}
+	.logo-itm {
+		position: absolute;
+		top: 30px;
+	}
+	.mainmenu {
+		height: 200px;
+		top: 0px;
+	}
+
+	.slogan-text{
+		display: block;
+	}
+
+	.slogan-mini {
+		display: none;
+	}
+
+	.logo {
+		top: 10px;
+		left: 46%;
+		transform: translateX(-50%);
+	}
+
 	.wrap-contacts {
 		margin: 50px auto 0;
 	}

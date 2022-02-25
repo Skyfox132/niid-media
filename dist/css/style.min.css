@@ -121,6 +121,17 @@
   color: #808080;
 }
 
+@media only screen and (max-width: 860px) {
+  .cabinet {
+    display: none;
+  }
+}
+@media only screen and (max-width: 701px) {
+  .social_links {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 /* Указываем box sizing */
 *,
 *::before,
@@ -646,6 +657,37 @@ svg {
     transform: translateX(-115%);
   }
 }
+@media only screen and (max-width: 917px) {
+  .contact-icon_1:before {
+    content: "";
+    position: absolute;
+    background: no-repeat url("../img/call-icon.png") 0 0;
+    width: 430px;
+    height: 40px;
+    left: 0;
+    transform: translateX(-121%);
+  }
+
+  .contact-icon_2:before {
+    content: "";
+    position: absolute;
+    background: no-repeat url("../img/mail-icon.png") 0 0;
+    width: 430px;
+    height: 40px;
+    left: 0;
+    transform: translateX(-121%);
+  }
+
+  .contact-icon_3:before {
+    content: "";
+    position: absolute;
+    background: no-repeat url("../img/adress-icon.png") 0 0;
+    width: 430px;
+    height: 40px;
+    left: 0;
+    transform: translateX(-121%);
+  }
+}
 @media only screen and (max-width: 801px) {
   .unwrap {
     padding: 0px 128px;
@@ -740,7 +782,37 @@ svg {
     margin-top: 10px;
   }
 }
-@media only screen and (max-width: 458px) {
+@media only screen and (max-width: 481px) {
+  .contact-icon_1:before {
+    content: "";
+    position: absolute;
+    background: no-repeat url("../img/call-icon.png") 0 0;
+    width: 430px;
+    height: 40px;
+    left: 0;
+    transform: translateX(-105%);
+  }
+
+  .contact-icon_2:before {
+    content: "";
+    position: absolute;
+    background: no-repeat url("../img/mail-icon.png") 0 0;
+    width: 430px;
+    height: 40px;
+    left: 0;
+    transform: translateX(-105%);
+  }
+
+  .contact-icon_3:before {
+    content: "";
+    position: absolute;
+    background: no-repeat url("../img/adress-icon.png") 0 0;
+    width: 430px;
+    height: 40px;
+    left: 0;
+    transform: translateX(-105%);
+  }
+
   .contacts.unwrap {
     padding: 0 80px;
   }
@@ -1882,7 +1954,7 @@ h2 {
     position: absolute;
     width: 100px;
     height: auto;
-    top: 30%;
+    top: 30px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -1914,6 +1986,36 @@ h2 {
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 481px) {
+  .menu-link_active a {
+    font-size: 1rem;
+    margin-top: 10px;
+    line-height: 80%;
+  }
+
+  .logo-itm {
+    position: absolute;
+    top: 30px;
+  }
+
+  .mainmenu {
+    height: 200px;
+    top: 0px;
+  }
+
+  .slogan-text {
+    display: block;
+  }
+
+  .slogan-mini {
+    display: none;
+  }
+
+  .logo {
+    top: 10px;
+    left: 46%;
+    transform: translateX(-50%);
+  }
+
   .wrap-contacts {
     margin: 50px auto 0;
   }

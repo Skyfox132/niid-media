@@ -110,5 +110,15 @@ $orange-color: #f8b017;
 
     }
 }
+@media only screen and (max-width : 860px) {
+    .cabinet {
+        display: none;
+    }
+ }
 
-
+@media only screen and (max-width : 701px) {
+    .social_links {
+        display: flex;
+        flex-wrap: wrap;
+    }
+ }
