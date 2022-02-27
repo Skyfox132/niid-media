@@ -4,19 +4,34 @@ body{
     font-size: 16px;
     line-height: 18px;
 }
+
+
+
 .empty-visible {
     height: 184px;
 }
 
 .menu-nav {
-
-    max-width: 1360px;
+    width: 100%;
     margin: 10px 42px 10px;
 }
 
-
+.dots-container {
+    margin: 0 auto;
+    position: relative;
+    height: auto;
+	max-width: 100%;
+    display: flex;
+    margin-top: 70px;
+    justify-content: space-between;
+    
+}
+.wrapper {
+    width: 100%;
+}   
 .mainmenu {
     display: flex;
+    background:#000;
     justify-content: center;
     position: absolute;
     transition: top, height;
@@ -28,14 +43,12 @@ body{
     font-weight: 800;
     font-size: 0.7rem;
     line-height: 140.62%;
-    background: #000;
-    letter-spacing: 0.08em;
+        letter-spacing: 0.08em;
     color: #FFFFFF;
-    top: 70px;
 }
 
 .menu-nav {
-    height: 120px;
+    margin: 10px 65px 10px 165px;
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -48,7 +61,8 @@ body{
     width: 148px;
     height: 148px;
     position: relative;
-    transform: translateY(-50px);
+    margin-right: -70px;
+    transform: translate(-50%, -50px);
 }
 .logo-mini {
     position: relative;
@@ -112,12 +126,13 @@ body{
 
 .logo-min__position {
     opacity: 1;
-    left: 150px;
+    left: 13vw;
 }
 
 .logo-itm {
     transition-duration: 0.5s;
     transition: width;
+    
 }
 
 .cabinet {

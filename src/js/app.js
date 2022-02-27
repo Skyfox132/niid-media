@@ -76,7 +76,7 @@ var swiper = new Swiper(".swiper", {
       },
       // when window width is >= 960px
       960: {
-        slidesPerView: 4,
+        slidesPerView: 3.5,
       },
       // when window width is >= 1440px
       1441: {
@@ -112,18 +112,20 @@ var swiper = new Swiper(".swiper", {
 
 
 
-const burger_icon = document.querySelector(".burger_icon")
-const burger = document.querySelector(".burger")
-const links = document.querySelector(".menu-link")
-const logo = document.querySelector(".logo")
-const cabinet = document.querySelector(".cabinet")
+const burgerItem = document.querySelector(".burger-item")
+const burger = document.querySelector(".burger-icon")
+const menuBurger = document.querySelector(".burgerMenu")
+// const links = document.querySelector(".menu-link")
+// const logo = document.querySelector(".logo")
+// const cabinet = document.querySelector(".cabinet")
 
 
-burger_icon.addEventListener("click", function() {
-    links.classList.toggle("menu-link_active")
+burger.addEventListener("click", function() {
+  console.log("ok");
+    burger.classList.toggle("_active")
     document.body.classList.toggle('lock');
-    this.classList.toggle("burger_active")
-    logo.classList.toggle("logo_active")
-    cabinet.classList.toggle("cabinet_active")
+    menuBurger.classList.toggle("_active")
+
 })
+
 
