@@ -884,11 +884,34 @@ h2 {
 }
 
 //
+@media all and (max-width: 1930px) {
+
+	.logo-mini {
+		transform: translateX(-180px);
+	}
+} 
 
 
+@media all and (min-width: 1701px) {
+	.menu-nav {
+		margin: 10px 65px 10px 14vw;
+
+	}
+} 
 @media all and (max-width: 1700px) { 
 	.menu-nav {
-		margin: 10px 65px 10px 220px;
+		margin: 10px 65px 10px 200px;
+
+	}
+	.logo-mini {
+		transform: translateX(-160px);
+	}
+}
+
+
+@media all and (max-width: 1441px) { 
+	.menu-nav {
+		margin: 10px 65px 10px 175px;
 
 	}
 	.logo-mini {
@@ -924,6 +947,12 @@ h2 {
 	}
 	.logo-min__position {
 		left: 16vw;
+	}
+}
+
+@media all and (max-width: 1025px) { 
+	.menu-nav {
+		margin: 10px 65px 10px 110px;
 	}
 }
 

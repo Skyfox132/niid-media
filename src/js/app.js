@@ -120,12 +120,14 @@ const menuBurger = document.querySelector(".burgerMenu")
 // const cabinet = document.querySelector(".cabinet")
 
 
-burger.addEventListener("click", function() {
-  console.log("ok");
-    burger.classList.toggle("_active")
-    document.body.classList.toggle('lock');
-    menuBurger.classList.toggle("_active")
-
-})
-
+if(burger) {
+  burger.addEventListener("click", function() {
+    console.log("ok");
+      burger.classList.toggle("_active")
+      document.body.classList.toggle('lock');
+      menuBurger.classList.toggle("_active")
+  
+  })
+  
+}
 
