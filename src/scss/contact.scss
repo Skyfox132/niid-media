@@ -18,7 +18,7 @@ $orange-color: #F8B017;
   }
 
 .contact_list{
-    margin-top: 250px !important;
+    margin-top: 180px !important;
 }
 .contact_list li{
     line-height: 190%;
@@ -244,7 +244,14 @@ svg {
     }
 }
 
-
+@media only screen and (max-width : 917px) {
+    #map {
+        margin-bottom: -80px;
+    }
+    .copyright.wrap {
+        margin: 0 auto !important;
+    }
+}
 
 @media only screen and (max-width : 801px) {
     .contacts.unwrap {

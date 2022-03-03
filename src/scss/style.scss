@@ -53,6 +53,10 @@ body.lock {
 	overflow: hidden;
 }
 
+
+.wrap.dots-margin {
+	margin-top: 90px;
+}
 h2 {
 	font-family: Inter;
 	font-size: 64px;
@@ -706,6 +710,37 @@ h2 {
 }
 
 /*cooperation*/
+.errorInput {
+	& p {
+		margin-top: 2px !important;
+	}
+	font-family: Inter;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 0.5rem;
+	line-height: 140%;
+	color: red;
+	opacity: 1;
+	display: none;
+}
+.thank {
+	margin-left: 30px;
+	
+
+}
+
+.thankp {
+	display: none;
+}
+.thank p {
+	
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 0.7rem;
+	line-height: 150%;
+}
+
 .cooperation {
 	margin-top: 75px;
 	margin-bottom: 60px;
@@ -717,7 +752,8 @@ h2 {
 		line-height: 150%;
 		letter-spacing: 0.06em;
 	}
-	& input, select {
+	& input, select, textarea {
+
 		margin-top: 30px;
 		display: block;
 		max-width: 517px;
@@ -734,12 +770,16 @@ h2 {
 			outline: none;
 			border: 3px solid $orange-color;
 		}
+		&:invalid {
+			border: 3px solid red;
+		}
 	}
 	& span {
 		display: inline-block;
 	}
 	& select {
 		appearance: none;
+
 	}
 
 }
@@ -885,16 +925,19 @@ h2 {
 
 //
 @media all and (max-width: 1930px) {
+	.menu-nav {
+		margin: 10px 65px 10px 13vw;
 
+	}
 	.logo-mini {
-		transform: translateX(-180px);
+		transform: translateX(-190px);
 	}
 } 
 
 
 @media all and (min-width: 1701px) {
 	.menu-nav {
-		margin: 10px 65px 10px 14vw;
+		margin: 10px 65px 10px 13.4vw;
 
 	}
 } 
@@ -971,6 +1014,9 @@ h2 {
 		font-size: 3rem;
 		line-height: 120%;
 	}
+	footer {
+		margin-top: 70px;
+	}
 }
 
 @media all and (min-width: 851px) { 
@@ -1026,7 +1072,7 @@ h2 {
 	}
 	.wrap {
 		padding: 0 9vw;
-		margin: 80px auto 0;
+		margin: 0 auto;
 	}
 	.menu-link li {
 		font-size: 0.6rem;
@@ -1343,29 +1389,18 @@ h2 {
 	.logo-mini {
 		display: none;
 	}
-	// .slogan-text {
-	// 	display: block;
-	// 	// display: block;
-	// 	// position: absolute;
-	// 	// top: 80%;
-	// 	width: 300px;
-	// 	// left: 50vw;
-	// 	transform: translateX(-50%);
-	// 	text-align: center;
-	// }
-	// .slogan-mini {
-	// 	display: none;
-	// }
-	// .mainmenu {
-	// 	position: absolute;
-	// }
+
 	.logo, .slogan {
 		display: none;
 	}
 
+	.politic span {
+		font-size: .8rem;
+	}
 
-
-
+	.wrap.dots-margin {
+		margin-top: 50px;
+	}
 
 	.niidmail {
 		display: block;
@@ -1374,8 +1409,8 @@ h2 {
 		font-size: 2rem;
 	}
 	.wrap {
-		padding: 0;
-		margin: 80px 20px 0;
+		padding: 10px;
+		margin: 0 20px 0;
 	}
 	.news_date {
 		display: none;
@@ -1388,7 +1423,7 @@ h2 {
 	}
 
 	.social_links__margin {
-		margin: 0 auto;
+		margin:50px auto;
 		& a{
 			margin-left: 15px;
 			margin-top: 15px;
@@ -1426,7 +1461,37 @@ h2 {
 		padding-left: 70px;
 
 	}
+	.social_links__margin {
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+	}
+	.social_links__margin a {
+		margin-left: 0;
+		margin-right: 30px;
+	}
+	.niidmail {
+		text-align: center;
+		width: 100%;
+		display: block;
+		& a {
+			justify-content: center;
+			transform: translateX(-100%);
+		}
+
+	}
 }
+
+
+@media all and (max-width: 349px) { 
+
+	.social_links__margin a {
+		margin-left: 0;
+		margin-right: 20px;
+	}
+
+}
+
 // @media all and (max-width: 1441px) { 
 // 	.title_h1 {
 // 		margin: 0 40px;

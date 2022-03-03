@@ -131,3 +131,15 @@ if(burger) {
   
 }
 
+
+
+
+const subm = document.querySelector(".coop-btn")
+const btnSubm = document.querySelector(".thankp")
+
+if (subm) {
+  subm.addEventListener("click", () => {
+    btnSubm.style.display = "block"
+  })
+}
+  
