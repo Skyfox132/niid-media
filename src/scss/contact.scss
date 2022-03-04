@@ -18,7 +18,7 @@ $orange-color: #F8B017;
   }
 
 .contact_list{
-    margin-top: 180px !important;
+    margin-top: 140px !important;
 }
 .contact_list li{
     line-height: 190%;
@@ -86,7 +86,7 @@ $orange-color: #F8B017;
         width: 430px;
         height: 40px;
         left: 0;
-        transform: translateX(-121%);
+        transform: translateX(-124%);
     }
 }
 .contact-icon_2 {
@@ -97,7 +97,7 @@ $orange-color: #F8B017;
         width: 430px;
         height: 40px;
         left: 0;
-        transform: translateX(-121%);
+        transform: translateX(-124%);
     }
     
 }
@@ -109,7 +109,7 @@ $orange-color: #F8B017;
         width: 430px;
         height: 40px;
         left: 0;
-        transform: translateX(-121%);
+        transform: translateX(-124%);
     }
 }
 .copyright {
@@ -253,14 +253,24 @@ svg {
     }
 }
 
+
+@media only screen and (max-width : 811px) {
+    .social_container {
+        padding-left: 17px;
+    }
+}
+
+
 @media only screen and (max-width : 801px) {
     .contacts.unwrap {
         padding: 0 21vw;
     }
     .social_container {
-        padding-left: 35px;
+        padding-left: 15px;
     }
-
+    .sloganMob {
+        margin: 0 10px;
+    }
    
    .unwrap {
     padding: 0px 128px;

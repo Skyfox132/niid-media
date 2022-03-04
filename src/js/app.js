@@ -71,7 +71,7 @@ var swiper = new Swiper(".swiper", {
         slidesPerView: 2,
       },
       // when window width is >= 800px
-      801: {
+      811: {
         slidesPerView: 3,
       },
       // when window width is >= 960px
