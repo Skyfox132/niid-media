@@ -2,7 +2,7 @@ import * as flsFunctions from "./modules/functions.js";
 flsFunctions.isWebp();
 import { gsap } from "gsap";
 // import Swiper from 'swiper';
-import Swiper, { Navigation, Pagination, Scrollbar } from 'swiper';
+import Swiper, { Autoplay, Navigation, Pagination, Scrollbar } from 'swiper';
 import scrollBullet from "./modules/scrollBullet.js";
 import stickMenu from "./modules/stickMenu.js";
 import tabs from "./modules/tabs.js";
@@ -54,12 +54,18 @@ opacityText();
 
 
 var swiper = new Swiper(".swiper", {
-    modules: [ Navigation, Pagination, Scrollbar],
+    initialSlide : 0,
+    modules: [ Navigation, Pagination, Scrollbar, Autoplay],
     slidesPerView: 1,
     spaceBetween: 0,
     centeredSlides: false,
     grabCursor: true,
-    loop: false,
+    autoplay: 
+    {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    loop: true,
     scrollbar: {
       el: ".swiper-scrollbar",
       hide: false,
@@ -84,7 +90,7 @@ var swiper = new Swiper(".swiper", {
       },
       // when window width is >= 1920px
       1880: {
-        slidesPerView: 4,
+        slidesPerView: 5,
       }
     }
   });
