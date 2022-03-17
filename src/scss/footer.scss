@@ -19,14 +19,15 @@ $orange-color: #f8b017;
         line-height: 1.3rem;
 
         letter-spacing: 0.08em;
+        & a {
+         color: #c8c8c8 !important;
+            &:hover {
+            cursor: pointer;
+            color: $orange-color !important;
+        }
+        }
+    }
 
-        color: #C8C8C8;
-    }
-    & li:hover {
-        cursor: pointer;
-        color: $orange-color;
-    }
-   
 }
 
 .link-margin {
