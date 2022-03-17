@@ -142,10 +142,18 @@ if(burger) {
 
 const subm = document.querySelector(".coop-btn")
 const btnSubm = document.querySelector(".thankp")
+const checkBox = document.querySelector("#check_box")
+const errorPolitic = document.querySelector(".errorP")
 
 if (subm) {
-  subm.addEventListener("click", () => {
-    btnSubm.style.display = "block"
+  subm.addEventListener("click", (event) => {
+    event.preventDefault
+    if (checkBox.checked) {
+      btnSubm.style.display = "block"
+    } else if (checkBox) {
+      errorPolitic.style.display = "block"
+    }
+    
   })
 }
   

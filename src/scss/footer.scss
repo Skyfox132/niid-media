@@ -9,7 +9,7 @@ $orange-color: #f8b017;
 
 .footer-links {
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-start !important;
     & li {
         list-style-type: none;
         font-family: Inter;

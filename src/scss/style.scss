@@ -745,8 +745,18 @@ h2 {
 	display: none;
 
 }
-.thank p, .errorPolitic p {
+.errorP {
+	display: none;
+
+}
+.errorPolitic p {
 	color: red;
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1rem !important;
+}
+.thank p {
 	
 	font-family: Inter;
 	font-style: normal;
