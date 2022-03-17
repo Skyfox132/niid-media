@@ -4,19 +4,19 @@
     <form action="submit">
         <input name="name"  type="text" placeholder="Имя" minlength="3">
         <div class="errorInput">
-            <p>Ошибка заполнения</p>
+            <p>Пожалуйста, введите ваше имя.</p>
         </div>
         <input name="secondName"  type="text" placeholder="Фамилия" minlength="3"> 
         <div class="errorInput">
-            <p>Ошибка заполнения</p>
+            <p>Пожалуйста, введите вашу фамилию.</p>
         </div>
         <input name="thirdName"  type="text" placeholder="Отчество" minlength="3">
         <div class="errorInput">
-            <p>Ошибка заполнения</p>
+            <p>Пожалуйста, введите ваше отчество.</p>
         </div>
         <input name="mail"  type="email" placeholder="E-mail или телефон" minlength="3">
         <div class="errorInput">
-            <p>Ошибка заполнения</p>
+            <p>Пожалуйста, введите адрес вашей электронной почты или номер телефона.</p>
         </div>
         <div class="select">
             <select name="formCoop"  type="Имя" value="Форма сотрудничества">
@@ -24,6 +24,9 @@
                 <option value="Форма сотрудничества">Франшиза</option>
                 <option value="Форма сотрудничества">Кооперация</option>
             </select>
+        </div>
+        <div class="errorInput">
+            <p>Пожалуйста, укажите форму сотрудничества.</p>
         </div>
 
         <textarea name="coment" rows="4" cols="50" placeholder="Коментарий"></textarea>
@@ -38,6 +41,7 @@
                 Отправить заявку
             </button>
             <span class="thank"><p class="thankp">Спасибо! Ваша заявка принята.</p></span>
+            <span class="errorPolitic"><p class="thankp">Необходимо ваше согласие с политикой кофиденциальности!</p></span>
         </div>
 
     </form>

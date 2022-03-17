@@ -9,7 +9,7 @@ $orange-color: #f8b017;
 
 .footer-links {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     & li {
         list-style-type: none;
         font-family: Inter;
@@ -30,7 +30,7 @@ $orange-color: #f8b017;
 }
 
 .link-margin {
-    margin-right:15px;
+    margin-right:30px;
     & h5 {
         margin-bottom: 20px;
     }

@@ -59,7 +59,7 @@ body.lock {
 }
 h2 {
 	font-family: Inter;
-	font-size: 64px;
+	font-size: 4.3rem;
 	font-style: normal;
 	font-weight: 700;
 	line-height: 80px;
@@ -169,7 +169,9 @@ h2 {
 	padding: 0 17vw;
 }
 /* title block*/
-
+.h1_min {
+	font-size: 1.3rem;
+}
 .title {
 	margin: 100px auto 0px;
 	& h1 {
@@ -301,7 +303,7 @@ h2 {
 		margin-top: 10px;
 		font-family: Inter;
 		font-family: Inter;
-		font-size: 1rem;
+		font-size: 0.7rem;
 		font-style: normal;
 		font-weight: 700;
 		line-height: 140%;
@@ -311,7 +313,7 @@ h2 {
 	}
 	& h3 {
 		font-family: Inter;
-		font-size: 21px;
+		font-size: 1.3rem;
 		font-style: normal;
 		font-weight: 800;
 		line-height: 32px;
@@ -712,17 +714,22 @@ h2 {
 
 /*cooperation*/
 .errorInput {
+	position: relative;
 	& p {
 		margin-top: 2px !important;
+		position: absolute;
+		top: 0;
+		left: 0;
 	}
 	font-family: Inter;
 	font-style: normal;
 	font-weight: bold;
-	font-size: 0.5rem;
 	line-height: 140%;
 	color: red;
 	opacity: 1;
 	display: none;
+	
+
 }
 .thank {
 	margin-left: 30px;
@@ -732,13 +739,16 @@ h2 {
 
 .thankp {
 	display: none;
+
 }
-.thank p {
+.thank p, .errorPolitic p {
+	color: red;
 	
 	font-family: Inter;
 	font-style: normal;
 	font-weight: 500;
-	font-size: 0.7rem;
+	font-size: 1rem !important;
+
 	line-height: 150%;
 }
 
@@ -749,7 +759,7 @@ h2 {
 	& p {
 		margin-top: 20px;
 		font-weight: 500;
-		font-size: 1.1rem;
+		font-size: 0.7rem;
 		line-height: 150%;
 		letter-spacing: 0.06em;
 	}

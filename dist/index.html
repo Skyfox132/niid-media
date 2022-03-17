@@ -258,30 +258,40 @@
 
 
 				<!-- Block news -->
-				<section class="our-comand wrap dots-margin">
-    <div class="actual_title">
-        <h2 class="dots">Наша команда</h2>
-    </div>
-    <p>Общие слова про команду и состав института... На личном опыте и эмпирике контакта десятков тысяч человек из разных социальных групп с Деньгами, мы статистически, аналитически и экспериментально, выводим базовые и универсальные.
-    </p>
+				<section class="news wrap dots-margin">
+    <h2 class="dots">Новости</h2>
+    <a href="#" target="blank" class="orange">Все новости</a>
+    <div class="news-items">
+        <div class="new_item">
+            <div class="news_date">
+                <span>22.02.22</span>
+            </div>
+            <div class="news_post">
+                <h3><a href="#">В НИИД открыты курсы</a></h3>
+                <p>Вывести универсальную формулу, катехизис, свод золотых правил и причинно-следственных связей, управляющих этими энергией и полем. НИИ Денег, это первый научно-исследовательский институт, изучающий природу Денег.<a href="#" class="orange pointer">>>></a></p>
 
-    <div class="gallery">
-        <div class="gallery-item_1 gallery-item">
-            <img src="./img/photo_1.jpg" alt="">
-            <h3>Сергей Алексеев</h3>
-            <p>Основатель и ректор института</p>
+            </div>
         </div>
-        <div class="gallery-item_2 gallery-item">
-            <img src="./img/photo_2.jpg" alt="">
-            <h3>Василий Главный</h3>
-            <p>Член попечительского совета</p>
-        </div>
-        <div class="gallery-item_3 gallery-item">
-            <img src="./img/photo_3.jpg" alt="">
-            <h3>Ольга Замглавная</h3>
-            <p>Член попечительского совета</p>
-        </div>
+        <div class="new_item">
+            <div class="news_date">
+                <span>22.02.22</span>
+            </div>
+            <div class="news_post">
+                <h3><a href="#">Новость</a></h3>
+                <p>Вывести универсальную формулу, катехизис, свод золотых правил и причинно-следственных связей, управляющих этими энергией и полем. НИИ Денег, это первый научно-исследовательский институт, изучающий природу Денег. Вывести универсальную формулу, катехизис, свод золотых правил и причинно-следственных связей, управляющих этими энергией и полем...<a href="#" class="orange pointer">>>></a></p>
 
+            </div>
+        </div>
+        <div class="new_item">
+            <div class="news_date">
+                <span>22.02.22</span>
+            </div>
+            <div class="news_post">
+                <h3><a href="#">Ещё одна новость</a></h3>
+                <p>Вывести универсальную формулу, катехизис, свод золотых правил и причинно-следственных связей, управляющих этими энергией и полем. НИИ Денег, это первый научно-исследовательский институт, изучающий природу Денег. <a href="#" class="orange pointer">>>></a></p>
+
+            </div>
+        </div>
     </div>
 
 </section>
@@ -402,19 +412,19 @@
     <form action="submit">
         <input name="name"  type="text" placeholder="Имя" minlength="3">
         <div class="errorInput">
-            <p>Ошибка заполнения</p>
+            <p>Пожалуйста, введите ваше имя.</p>
         </div>
         <input name="secondName"  type="text" placeholder="Фамилия" minlength="3"> 
         <div class="errorInput">
-            <p>Ошибка заполнения</p>
+            <p>Пожалуйста, введите вашу фамилию.</p>
         </div>
         <input name="thirdName"  type="text" placeholder="Отчество" minlength="3">
         <div class="errorInput">
-            <p>Ошибка заполнения</p>
+            <p>Пожалуйста, введите ваше отчество.</p>
         </div>
         <input name="mail"  type="email" placeholder="E-mail или телефон" minlength="3">
         <div class="errorInput">
-            <p>Ошибка заполнения</p>
+            <p>Пожалуйста, введите адрес вашей электронной почты или номер телефона.</p>
         </div>
         <div class="select">
             <select name="formCoop"  type="Имя" value="Форма сотрудничества">
@@ -422,6 +432,9 @@
                 <option value="Форма сотрудничества">Франшиза</option>
                 <option value="Форма сотрудничества">Кооперация</option>
             </select>
+        </div>
+        <div class="errorInput">
+            <p>Пожалуйста, укажите форму сотрудничества.</p>
         </div>
 
         <textarea name="coment" rows="4" cols="50" placeholder="Коментарий"></textarea>
@@ -436,6 +449,7 @@
                 Отправить заявку
             </button>
             <span class="thank"><p class="thankp">Спасибо! Ваша заявка принята.</p></span>
+            <span class="errorPolitic"><p class="thankp">Необходимо ваше согласие с политикой кофиденциальности!</p></span>
         </div>
 
     </form>
